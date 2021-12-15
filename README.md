@@ -55,6 +55,10 @@ I will only use fully labeled data for my models, and compensate the lack of dat
 
 ### Transfer Learning using Inception V1 Classification  
 
+![image](https://user-images.githubusercontent.com/68081679/146235168-f09c9b97-be42-4b57-a400-81f762bb0250.png)  
+The pretrained model used in this model is Inception V1 Classification. Link to the model from tensorhub: https://tfhub.dev/google/imagenet/inception_v1/classification/5  
+The function "create_model" were defined as below:  
+
 
 
 
