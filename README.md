@@ -1,5 +1,5 @@
 # Zalo-AI-Challenge
-This repository contains the code and dataset for the Bremen Big data challenge 2019.  
+This repository contains the code and dataset for the Bremen Big data challenge 2019. The code includes the model using Transfer learning with Inception, an util file, and a model that I built by myself.  
 Link to the competition: https://challenge.zalo.ai/portal/5k-compliance  
 
 ## Problem description: 
@@ -38,4 +38,16 @@ Inside the public_test.zip, you can find the following:
 
 image_id: id of image  
 fname: filename of image  
+
+In the private test you can find the same thing in the Private Test file.   
+
+## Data Inspection: 
+
+#### Describe the dataset:  
+
+![image](https://user-images.githubusercontent.com/68081679/146222605-5db362e7-f86f-436c-94b8-fab25c2c7bf0.png)  
+
+
+
+
 
