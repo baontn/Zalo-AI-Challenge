@@ -47,6 +47,26 @@ In the private test you can find the same thing in the Private Test file.
 
 ![image](https://user-images.githubusercontent.com/68081679/146222605-5db362e7-f86f-436c-94b8-fab25c2c7bf0.png)  
 
+It can be observed that there are 4175 images in the train dataset, there were a lot of missing labels. The number of missing labels were:  
+![image](https://user-images.githubusercontent.com/68081679/146226304-e4e0286b-d52c-42f6-b30b-8e7a23d9b8f4.png)  
+I will only use fully labeled data for my models, and compensate the lack of data by data augmentation.  
+
+## Build the models 
+
+### Transfer Learning using Inception V1 Classification  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
