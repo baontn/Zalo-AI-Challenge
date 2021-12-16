@@ -20,11 +20,11 @@ Inside the train.zip, you can find the following:
 
 * train_meta.csv file: includes 5 columns:  
 
-    image_id: id of image  
-   fname: filename of image  
-   mask: mask label  
-** distancing: distance label  
-** 5k: meet both conditions of mask and distancing  
+    * image_id: id of image  
+    * fname: filename of image  
+    * mask: mask label  
+    * distancing: distance label  
+    * 5k: meet both conditions of mask and distancing  
  
 Please note that there are some missing labels in the training dataset.   
 
