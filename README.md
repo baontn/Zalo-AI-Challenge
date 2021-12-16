@@ -1,5 +1,5 @@
 # Zalo-AI-Challenge
-This repository contains the code and dataset for the Bremen Big data challenge 2019. The code includes the model using Transfer learning with Inception, an util file, and a model that I built by myself.  
+This repository contains the code and dataset for the Zalo AI challenge 2021. It includes the model using Transfer learning with Inception, an util file, and a model that I built by myself.  
 Link to the competition: https://challenge.zalo.ai/portal/5k-compliance  
 
 ## Problem description: 
@@ -36,8 +36,8 @@ Inside the public_test.zip, you can find the following:
 
 * public_test_meta.csv file: includes 2 columns:  
 
-image_id: id of image  
-fname: filename of image  
+    * image_id: id of image  
+    * fname: filename of image  
 
 In the private test you can find the same thing in the Private Test file.   
 
@@ -56,9 +56,11 @@ I will only use fully labeled data for my models, and compensate the lack of dat
 ### Transfer Learning using Inception V1 Classification  
 
 ![image](https://user-images.githubusercontent.com/68081679/146235168-f09c9b97-be42-4b57-a400-81f762bb0250.png)  
-The pretrained model used in this model is Inception V1 Classification. Link to the model from tensorhub: https://tfhub.dev/google/imagenet/inception_v1/classification/5  
+The pre-trained model used in this model is Inception V1 Classification. Link to the model from tensorhub: https://tfhub.dev/google/imagenet/inception_v1/classification/5  
 The function "create_model" were defined as below:  
 
+![image](https://user-images.githubusercontent.com/68081679/146381199-3db02b71-3209-4e6f-bec1-a42f81754fa6.png)  
+The model will be created from the pre-trained model from Tensorflow hub, in this case Inception V1 Classification. 
 
 
 
