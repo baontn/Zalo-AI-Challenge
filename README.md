@@ -20,7 +20,7 @@ Inside the train.zip, you can find the following:
 
 * train_meta.csv file: includes 5 columns:  
 
-   image_id: id of image  
+    image_id: id of image  
    fname: filename of image  
    mask: mask label  
 ** distancing: distance label  
