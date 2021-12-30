@@ -1,5 +1,5 @@
 # Zalo-AI-Challenge
-This repository contains the code and dataset for the Zalo AI challenge 2021. It includes the model using Transfer learning with Inception, an util file, and a model that I built by myself.  
+This repository contains the code and dataset for the Zalo AI challenge 2021. It includes the model using Transfer learning with multiple pre-trained model, an util file, and a model that I built by myself.  
 Link to the competition: https://challenge.zalo.ai/portal/5k-compliance  
 
 ## Problem description: 
@@ -62,7 +62,17 @@ The function "create_model" were defined as below:
 ![image](https://user-images.githubusercontent.com/68081679/147751819-d3f8d46a-179a-4cc3-b6cc-59bba76c6358.png)  
 The model will be created from the pre-trained models from Tensorflow hub. I choosed [Imagenet (ILSVRC-2012-CLS) classification with Inception V3](https://tfhub.dev/google/imagenet/inception_v3/classification/5), [Feature vectors of images with EfficientNet V2 with input size 224x224, trained on imagenet-ilsvrc-2012-cls](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet1k_b0/feature_vector/2), [Feature vectors of images with EfficientNet V2 with input size 480x480, trained on imagenet-21k (Full ImageNet, Fall 2011 release)](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_l/feature_vector/2).  
 
-The trainable attribute was set to True, so that 
+Initially, the trainable attribute was set to False, but then I turned to True and it produced much better performance. 
+
+The models were saved into h5 files. 
+
+
+## Result
+
+
+
+
+Among the models, the EfficientNet V2 model seemed to to generate the best result.   
 
 
 
