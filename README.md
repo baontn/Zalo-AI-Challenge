@@ -59,21 +59,27 @@ I will only use fully labeled data for my models, and compensate the lack of dat
 The links above are the links to the pre-trained models from Tensorflow Hub.    
 The function "create_model" were defined as below:  
 
-![image](https://user-images.githubusercontent.com/68081679/147751819-d3f8d46a-179a-4cc3-b6cc-59bba76c6358.png)  
+![image](https://user-images.githubusercontent.com/68081679/147783920-6869afb0-0f38-4998-8227-ef349873cca1.png)
 The model will be created from the pre-trained models from Tensorflow hub. I choosed [Imagenet (ILSVRC-2012-CLS) classification with Inception V3](https://tfhub.dev/google/imagenet/inception_v3/classification/5), [Feature vectors of images with EfficientNet V2 with input size 224x224, trained on imagenet-ilsvrc-2012-cls](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet1k_b0/feature_vector/2), [Feature vectors of images with EfficientNet V2 with input size 480x480, trained on imagenet-21k (Full ImageNet, Fall 2011 release)](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_l/feature_vector/2).  
 
-Initially, the trainable attribute was set to False, but then I turned to True and it produced much better performance. 
+Initially, the trainable attribute was set to False, but then I turned to True and it produced much better performance. I let the model run for 10 epochs and use . The Image size was set to be 360x360,
 
 The models were saved into h5 files. 
+
+
+### Self-built model using CNN layers.
+
+
+
 
 
 ## Result
 
 ### Evaluation metrics
 
-The evaluation method for this competition is F1 score. In statistical analysis of binary classification, the F-score or F-measure is a measure of a test's accuracy. It is calculated from the precision and recall of the test, where the precision is the number of **true positive** results divided by the number of ** all positive results, including those not identified correctly **, and the recall is the number of ** true positive ** results divided by the number of ** all samples that should have been identified as positive **. Precision is also known as positive predictive value, and recall is also known as sensitivity in diagnostic binary classification. ([Wikipedia, 2021](https://en.wikipedia.org/wiki/F-score))  
+The evaluation method for this competition is F1 score. In statistical analysis of binary classification, the F-score or F-measure is a measure of a test's accuracy. It is calculated from the precision and recall of the test, where the precision is the number of **true positive** results divided by the number of **all positive results, including those not identified correctly**, and the recall is the number of **true positive** results divided by the number of **all samples that should have been identified as positive**. Precision is also known as positive predictive value, and recall is also known as sensitivity in diagnostic binary classification. ([Wikipedia, 2021](https://en.wikipedia.org/wiki/F-score)). Beside F1 score, I also use Accuracy. 
 
-Among the models, the EfficientNet V2 model seemed to to generate the best result.   
+
 
 
 
