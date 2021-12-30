@@ -71,7 +71,8 @@ The models were saved into h5 files.
 
 ### Evaluation metrics
 
-The evaluation method for this competition is 
+The evaluation method for this competition is F1 score. In statistical analysis of binary classification, the F-score or F-measure is a measure of a test's accuracy. It is calculated from the precision and recall of the test, where the precision is the number of **true positive** results divided by the number of ** all positive results, including those not identified correctly **, and the recall is the number of ** true positive ** results divided by the number of ** all samples that should have been identified as positive **. Precision is also known as positive predictive value, and recall is also known as sensitivity in diagnostic binary classification. ([Wikipedia, 2021](https://en.wikipedia.org/wiki/F-score))  
+
 Among the models, the EfficientNet V2 model seemed to to generate the best result.   
 
 
