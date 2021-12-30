@@ -60,7 +60,9 @@ The pre-trained model used in this model is Inception V1 Classification. Link to
 The function "create_model" were defined as below:  
 
 ![image](https://user-images.githubusercontent.com/68081679/146381199-3db02b71-3209-4e6f-bec1-a42f81754fa6.png)  
-The model will be created from the pre-trained model from Tensorflow hub, in this case Inception V1 Classification. 
+The model will be created from the pre-trained models from Tensorflow hub. I choosed [Imagenet (ILSVRC-2012-CLS) classification with Inception V3](https://tfhub.dev/google/imagenet/inception_v3/classification/5), [Feature vectors of images with EfficientNet V2](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet1k_b0/feature_vector/2),  
+
+
 
 
 
