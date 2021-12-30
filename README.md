@@ -59,17 +59,20 @@ I will only use fully labeled data for my models, and compensate the lack of dat
 The links above are the links to the pre-trained models from Tensorflow Hub.    
 The function "create_model" were defined as below:  
 
-![image](https://user-images.githubusercontent.com/68081679/147783920-6869afb0-0f38-4998-8227-ef349873cca1.png)
+![image](https://user-images.githubusercontent.com/68081679/147783920-6869afb0-0f38-4998-8227-ef349873cca1.png)  
 The model will be created from the pre-trained models from Tensorflow hub. I choosed [Imagenet (ILSVRC-2012-CLS) classification with Inception V3](https://tfhub.dev/google/imagenet/inception_v3/classification/5), [Feature vectors of images with EfficientNet V2 with input size 224x224, trained on imagenet-ilsvrc-2012-cls](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet1k_b0/feature_vector/2), [Feature vectors of images with EfficientNet V2 with input size 480x480, trained on imagenet-21k (Full ImageNet, Fall 2011 release)](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_l/feature_vector/2).  
 
-Initially, the trainable attribute was set to False, but then I turned to True and it produced much better performance. I let the model run for 10 epochs and use . The Image size was set to be 360x360,
+Initially, the trainable attribute was set to False, but then I turned to True and it produced much better performance. I used SGD optimizer, batchsize of 4 and let the model run for 10 epochs. After that, I used Data Augmentation to improve the model. The Image size was set to be 360x360.  
+![image](https://user-images.githubusercontent.com/68081679/147784591-c94fadc4-9a1f-4c02-b45d-4ace45da3154.png)  
 
 The models were saved into h5 files. 
 
-
 ### Self-built model using CNN layers.
 
+![image](https://user-images.githubusercontent.com/68081679/147784790-92f0f568-34b6-42d5-9d78-86c27828f93f.png)  
+In the self-built model, I used multiple Conv2D layers, together with BatchNormalization and MaxPooling2D layers to reduce the dimensity of the tensors.  
 
+### Image Augmentation
 
 
 
