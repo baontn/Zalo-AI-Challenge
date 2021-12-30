@@ -68,15 +68,18 @@ Initially, the trainable attribute was set to False, but then I turned to True a
 The models were saved into h5 files. 
 
 ### Self-built model using CNN layers.
-
-![image](https://user-images.githubusercontent.com/68081679/147784790-92f0f568-34b6-42d5-9d78-86c27828f93f.png)  
-In the self-built model, I used multiple Conv2D layers, together with BatchNormalization and MaxPooling2D layers to reduce the dimensity of the tensors.  
+![image](https://user-images.githubusercontent.com/68081679/147785354-ddca6c5a-bb62-44b2-bd7c-88e759df7f53.png)  
+In the self-built model, I used multiple Conv2D layers, together with BatchNormalization and MaxPooling2D layers to reduce the dimensity of the tensors. I trained the model for 15 epochs with batch size of 4 before doing Data Augmentation. 
 
 ### Image Augmentation
 
-
+![image](https://user-images.githubusercontent.com/68081679/147786155-b7486cee-56b4-467b-99b2-3ea9caf0e9ec.png)  
+Since we had limited number of fully labelled image, data augmentation was a must-have tool to improve the model. For that, I used the ImageDataGenerator and retrain the models for 10 epochs.  
 
 ## Result
+![image](https://user-images.githubusercontent.com/68081679/147786400-31c57e6e-9099-4d9a-a02b-ed41818e2ec6.png) ![image](https://user-images.githubusercontent.com/68081679/147786417-3c227124-756c-4cfa-93a1-ac73fbcba21e.png) ![image](https://user-images.githubusercontent.com/68081679/147786439-77be81b5-a333-4608-9fa0-e7a4cd203702.png)  
+ 
+
 
 ### Evaluation metrics
 
