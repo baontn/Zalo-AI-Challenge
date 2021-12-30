@@ -53,14 +53,16 @@ I will only use fully labeled data for my models, and compensate the lack of dat
 
 ## Build the models 
 
-### Transfer Learning using Inception V1 Classification  
+### Transfer Learning using different models  
 
-![image](https://user-images.githubusercontent.com/68081679/146235168-f09c9b97-be42-4b57-a400-81f762bb0250.png)  
-The pre-trained model used in this model is Inception V1 Classification. Link to the model from tensorhub: https://tfhub.dev/google/imagenet/inception_v1/classification/5  
+![image](https://user-images.githubusercontent.com/68081679/147751374-4e7f262f-29f2-4e8d-90e3-cd81738f1f14.png) 
+The links above are the links to the pre-trained models from Tensorflow Hub.    
 The function "create_model" were defined as below:  
 
-![image](https://user-images.githubusercontent.com/68081679/146381199-3db02b71-3209-4e6f-bec1-a42f81754fa6.png)  
+![image](https://user-images.githubusercontent.com/68081679/147751819-d3f8d46a-179a-4cc3-b6cc-59bba76c6358.png)
 The model will be created from the pre-trained models from Tensorflow hub. I choosed [Imagenet (ILSVRC-2012-CLS) classification with Inception V3](https://tfhub.dev/google/imagenet/inception_v3/classification/5), [Feature vectors of images with EfficientNet V2 with input size 224x224, trained on imagenet-ilsvrc-2012-cls](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet1k_b0/feature_vector/2), [Feature vectors of images with EfficientNet V2 with input size 480x480, trained on imagenet-21k (Full ImageNet, Fall 2011 release)](https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_l/feature_vector/2).  
+
+The trainable attribute was set to True, so that 
 
 
 
