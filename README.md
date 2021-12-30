@@ -69,9 +69,9 @@ The models were saved into h5 files.
 
 ## Result
 
+### Evaluation metrics
 
-
-
+The evaluation method for this competition is 
 Among the models, the EfficientNet V2 model seemed to to generate the best result.   
 
 
