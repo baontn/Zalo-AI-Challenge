@@ -53,7 +53,7 @@ I will only use fully labeled data for my models and compensate for the lack of 
 
 ## Build the models 
 
-### Transfer Learning using different models  
+### Transfer Learning using pre-trained models  
 
 ![image](https://user-images.githubusercontent.com/68081679/147751374-4e7f262f-29f2-4e8d-90e3-cd81738f1f14.png)  
 The links above are the links to the pre-trained models from TensorFlow Hub.    
