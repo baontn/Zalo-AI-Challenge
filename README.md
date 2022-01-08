@@ -103,10 +103,9 @@ The Efficientnet V2 imgnet 1k, Inception V3 and Efficientnet V2 imgnet 21k sligh
 
 Regarding Loss, that of Efficientnet V2 imgnet21k and Inception V3 slightly increased. However that of Efficientnet V2 imgnet 1k and the custom CNN model fluctuated, escpecially the custom CNN model in which it sky-rocketed in the last epoch. 
 
+## Reflection
 
-
-
-
+This is one of my very first model using neural network, and many things are not perfect. There are a lot of rooms for improvement. There are more than 4000 images in the given dataset, but I only used more than 2300 of fully labelled images. I think if I can utilize the remanining images, the models' perfomance can be improved. However I don't know how to approach yet. 
 
 
 
