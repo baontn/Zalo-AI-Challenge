@@ -86,7 +86,7 @@ The evaluation method for this competition is F1 score. In statistical analysis 
 
 #### Before Data Augmentation: 
 
-I used Tensorboard to summary the experiment results. Below is the graph which demonstrates the F1 scores of my models before data augmentation:  
+I used Tensorboard to summary the experiment results. [This is the link to the experiment](https://tensorboard.dev/experiment/EqAm4Y6SRAKZBaFZDK8FnA/#scalars&runSelectionState=eyJjdXN0b21fY25uIGF1Z21lbnRhdGlvbi90cmFpbiI6ZmFsc2UsImN1c3RvbV9jbm4gYXVnbWVudGF0aW9uL3ZhbGlkYXRpb24iOnRydWUsImVmZmljaWVudG5ldF92Ml9pbWduZXQxa19iMCBhdWdtZW50YXRpb24vdHJhaW4iOmZhbHNlLCJlZmZpY2llbnRuZXRfdjJfaW1nbmV0MWtfYjAgYXVnbWVudGF0aW9uL3ZhbGlkYXRpb24iOnRydWUsImVmZmljaWVudG5ldF92Ml9pbWduZXQyMWtfYjMgYXVnbWVudGF0aW9uL3RyYWluIjpmYWxzZSwiZWZmaWNpZW50bmV0X3YyX2ltZ25ldDIxa19iMyBhdWdtZW50YXRpb24vdmFsaWRhdGlvbiI6dHJ1ZSwiaW5jZXB0aW9udjMvdHJhaW4iOmZhbHNlLCJpbmNlcHRpb252MyBhdWdtZW50YXRpb24vdHJhaW4iOmZhbHNlLCJlZmZpY2llbnRuZXRfdjJfaW1nbmV0MjFrX2IzL3RyYWluIjpmYWxzZSwiZWZmaWNpZW50bmV0X3YyX2ltZ25ldDFrX2IwL3RyYWluIjpmYWxzZSwiY3VzdG9tX2Nubi90cmFpbiI6ZmFsc2UsImluY2VwdGlvbnYzIGF1Z21lbnRhdGlvbi92YWxpZGF0aW9uIjp0cnVlLCJjdXN0b21fY25uL3ZhbGlkYXRpb24iOmZhbHNlLCJlZmZpY2llbnRuZXRfdjJfaW1nbmV0MWtfYjAvdmFsaWRhdGlvbiI6ZmFsc2UsImVmZmljaWVudG5ldF92Ml9pbWduZXQyMWtfYjMvdmFsaWRhdGlvbiI6ZmFsc2UsImluY2VwdGlvbnYzL3ZhbGlkYXRpb24iOmZhbHNlfQ%3D%3D&_smoothingWeight=0). Below is the graph which demonstrates the F1 scores of my models before data augmentation:  
 ![image](https://user-images.githubusercontent.com/68081679/148650479-942a31c1-a6ff-4a00-8a65-22248b0ece6d.png)  
 The Efficientnet V2 imgnet21k performed best eventhough it had the least number of epochs. The other models (custom CNN, Efficientnet V2 imgnet1k and InceptionV3) seems to stop improving after the 4th epochs and the F1 score even dropped after the 6th epoch. At the end of the training process, the validation F1 score of the Efficientnet V2 imgnet 21k is 0.86, that of Efficientnet V2 imgnet 1k, Inception V3 and Custom CNN were 0.79, 0.76 and 0.74 respectively.  
 ![image](https://user-images.githubusercontent.com/68081679/148651828-b5817547-4e8b-4a2b-a60e-4776cf0d1f37.png)  
@@ -101,7 +101,9 @@ The Efficientnet V2 imgnet 1k, Inception V3 and Efficientnet V2 imgnet 21k sligh
 ![image](https://user-images.githubusercontent.com/68081679/148653585-9f58596d-2186-476d-bc88-035e6c2355ca.png)  
 
 
-Regarding Loss, 
+Regarding Loss, that of Efficientnet V2 imgnet21k and Inception V3 slightly increased. However that of Efficientnet V2 imgnet 1k and the custom CNN model fluctuated, escpecially the custom CNN model in which it sky-rocketed in the last epoch. 
+
+
 
 
 
