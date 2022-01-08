@@ -94,6 +94,14 @@ With regard to Loss, the EfficientNet V2 imgnet 21k was the only model that the 
 
 #### After Data Augmentation: 
 
+The models after data augmentation didn't perfomr as good as expected, and Efficientnet V2 imgnet 21k remained the best model. The F1 score for the models after data augmentation can be seen below:  
+![image](https://user-images.githubusercontent.com/68081679/148652440-f1b6832e-c158-4015-b400-fa63a1f22dd7.png)  
+The Efficientnet V2 imgnet 1k, Inception V3 and Efficientnet V2 imgnet 21k slightly increase with the score of 0.83, 0.79 and 0.88 respectively. However, the learning curves were flat. In contrast, that of the Custom CNN model fluctuated and end up worse than before data augmentation with the F1 score of 0.048.   
+
+![image](https://user-images.githubusercontent.com/68081679/148653585-9f58596d-2186-476d-bc88-035e6c2355ca.png)  
+
+
+Regarding Loss, 
 
 
 
