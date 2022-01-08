@@ -81,9 +81,20 @@ Since we had a limited number of fully labeled images, data augmentation was a m
 ### Evaluation metrics
 
 The evaluation method for this competition is F1 score. In statistical analysis of binary classification, the F-score or F-measure is a measure of a test's accuracy. It is calculated from the precision and recall of the test, where the precision is the number of **true positive** results divided by the number of **all positive results, including those not identified correctly**, and the recall is the number of **true positive** results divided by the number of **all samples that should have been identified as positive**. Precision is also known as positive predictive value, and recall is also known as sensitivity in diagnostic binary classification. ([Wikipedia, 2021](https://en.wikipedia.org/wiki/F-score)). Beside F1 score, I also used Accuracy.   
+
+### Using Tensorboard to display experiment results  
+
+#### Before Data Augmentation: 
+
 I used Tensorboard to summary the experiment results. Below is the graph which demonstrates the F1 scores of my models before data augmentation:  
 ![image](https://user-images.githubusercontent.com/68081679/148650479-942a31c1-a6ff-4a00-8a65-22248b0ece6d.png)  
-The Efficientnet V2 imgnet21k performed best eventhough it had the least number of epochs. The other models (custom CNN, Efficientnet V2 imgnet1k and InceptionV3) seems to stop improving after the 4th epochs. 
+The Efficientnet V2 imgnet21k performed best eventhough it had the least number of epochs. The other models (custom CNN, Efficientnet V2 imgnet1k and InceptionV3) seems to stop improving after the 4th epochs and the F1 score even dropped after the 6th epoch. At the end of the training process, the validation F1 score of the Efficientnet V2 imgnet 21k is 0.86, that of Efficientnet V2 imgnet 1k, Inception V3 and Custom CNN were 0.79, 0.76 and 0.74 respectively.  
+![image](https://user-images.githubusercontent.com/68081679/148651828-b5817547-4e8b-4a2b-a60e-4776cf0d1f37.png)  
+With regard to Loss, the EfficientNet V2 imgnet 21k was the only model that the loss improved during the training time. Other models tended to increase or fluctuate. The Inception V3 model was the with the highest loss and didn't improve through out the training period.  
+
+#### After Data Augmentation: 
+
+
 
 
 
